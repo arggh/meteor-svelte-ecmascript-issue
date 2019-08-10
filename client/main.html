@@ -1,0 +1,18 @@
+<head>
+  <title>Repro</title>
+</head>
+
+<body>
+  <h1>Instructions</h1>
+  <ol>
+    <li>Start app with `meteor`</li>
+    <li>Either acquire an iOS device with iOS 9.x or Windows laptop with IE11 or...</li>
+    <li>...Launch XCode Simulator, download iOS 9.x and launch a simulated device, or browse to <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/">MS Edge tools</a> and download a Windows VM with IE11</li>
+    <li>Open localhost:3000</li>
+    <li>Observe app crashing on TypeError from ecmascript-runtime-client.js</li>
+  </ol>
+  <p>
+    I was thinking, maybe this is about Svelte, so I built a similar hello world app with Svelte using Rollup and Babel, setting transpilation targets to IE11 and Safari 8. That just works, no errors thrown.
+  </p>
+  <div id="app"></div>
+</body>
